@@ -16,7 +16,8 @@ client.on('ready',()=>{
 					var dArr = JSON.parse(data);
 					
 					client.guilds.get('600017052362735666').members.get(client.user.id).setNickname('BTC $'+dArr[0]['lastPriceProtected'])
-
+					client.guilds.get('579297643361075201').members.get(client.user.id).setNickname('BTC $'+dArr[0]['lastPriceProtected'])//QD
+					
 					var fT = new Date(dArr[0]['fundingTimestamp']);
 					var nowT = new Date(dArr[0]['timestamp']);
 					var hours = Math.ceil(Math.abs(fT - nowT) / 36e5);
