@@ -1,1 +1,2 @@
 # BitMEX-XBTUSD
+BitMEX-XBTUSD Bot
