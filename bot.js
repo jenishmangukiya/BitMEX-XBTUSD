@@ -21,7 +21,7 @@ client.on('ready',()=>{
 					var nowT = new Date(dArr[0]['timestamp']);
 					var hours = Math.ceil(Math.abs(fT - nowT) / 36e5);
 
-					client.user.setActivity((dArr[0]['fundingRate']*100).toString()+'%')
+					client.user.setActivity((dArr[0]['fundingRate']*100).toString()+'% Funding')
 				});
     		});
     		request.on('error', function (e) {
@@ -32,9 +32,9 @@ client.on('ready',()=>{
 });
 
 client.on('message',msg=>{
-	if(msg.content === "Hello"){
+	/*if(msg.content === "Hello"){
 		msg.reply("Hello0000000!")
-	}
+	}*/
 });
 
 client.login(process.env.BOT_TOKEN)
